@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    --primary-color:#d50000;
+    --primary-color-trans:rgb(213, 0, 0,0.6);
+    --silver-trans:rgba(167,167,167,.4);
+    --white:#ffffff;
+    --black:#000000;
+    --black-trasparent:rgba(0,0,0,0.6)
+    
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.sec-spacing{
+    padding: 80px 0;
+}
+
+.header-wrapper{
+    position: relative;
+}
+.header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.hero-wrapper img{
+    width: 100%;
+}
+.hero-overlay-text{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.hero-overlay-text h1{
+    font-size:75px;
+    color: white;
+
+}
+.hero-overlay-text a{
+    padding: 12px 24px;
+    background-color: #d50000;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: all 1s;
+    position:absolute;
+    top: 120%;
+    transform: translate(-50%);
+}
+.hero-overlay-text a:hover{
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+.top-socialbar{
+    
+    background-color: var(--primary-color-trans);
+    padding: 16px;
+    
+}
+.top-socialbar-inner{
+    display: flex;
+    justify-content: space-between;
+
+}
+.top-socialbar ul.main-nav-bar-right{
+    display: flex;
+}
+.top-socialbar ul.main-nav-bar-right li a span{
+    -webkit-transition: width 2s, height 2s,-webkit-transform 2s;
+}
+.top-socialbar ul.main-nav-bar-right li a span:hover{
+    color: var(--black);
+  
+    -webkit-transform:rotateY(-360deg);
+}
+.top-socialbar ul.main-nav-bar-left{
+    font-weight:500;
+}
+.top-socialbar ul li{
+    margin-right:24px;
+    list-style-type: none;
+}
+.top-socialbar ul.main-nav-bar-right li:last-child{
+    margin-right: 0;
+
+}
+.top-socialbar ul li a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+
+
+.main-nav-bar{
+    background-color: var(--black-trasparent);
+}
+.main-nav-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav-inner ul{
+    display: flex;
+    list-style-type: none;
+}
+.main-nav-inner ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+.main-nav-inner ul li{
+    padding: 8px 10px;
+    margin: 0px 8px;
+    border-radius: 6px;
+    transition: all 1s;
+}
+.main-nav-inner ul li:last-child{
+    margin-right: 0;
+    
+}
+.main-nav-inner ul li:hover{
+    background-color: var(--primary-color);
+    
+}
+.main-nav-inner .fast-food-icon img{
+    width: 150px;
+    
+}
+.main-nav-bar{
+    padding: 12px;
+}
+.active{
+    background-color: var(--primary-color);
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+
+
+/* Main Section Below */
+
+.lead-text{
+    text-align: center;
+}
+.lead-text h2{
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    
+}
+.lead-text h2::before{
+    content: '';
+    width: 30px;
+    height: 4px;
+    background-color:rgb(167,167,167,.4);
+    display: inline-block;
+    position: absolute;
+    top: 32%;
+    left: -25%;
+}
+.lead-text h2::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    background-color:rgb(167,167,167,.4);
+    display: inline-block;
+    position: absolute;
+    top: 32%;
+    right: -25%;
+}
+
+.menu-inner-card-wrapper{
+    display: flex;
+    box-sizing: border-box;
+}
+.menu-card{
+    position: relative;
+    width: 25%;
+    margin-right: 25px;
+}
+.menu-card img{
+    width: 100%;
+    display:block;
+}
+.overlay{
+    position: absolute;
+    inset: 0;
+    background-color: var(--black-trasparent);
+}
+.menu-card h2{
+    font-size: 250%;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    
+}
+.menu-inner-card-wrapper:last-child{
+    margin-left: 0;
+}
+
+
+/* offer section */
+.offer-inner{
+    position: relative;
+    text-align: center;
+}
+.slider2-overlay{
+    position:absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+
+}
+.slider2-overlay h2{
+    font-size: 350%;
+    color: var(--primary-color);
+}
+.slider2-overlay p{
+    color: var(--black-trasparent);
+}
+.slider2-overlay a{
+    padding: 12px 24px;
+    color: white;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+   
+ 
+}
+.offer-inner img{
+    width: 100%;
+}
+
+
+
+/* Strip line text */
+.strip_line_text{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 60px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 150%;
+}
+
+
+/* Menu Items */
+
+.menu-details-inner{
+    display: flex;
+
+}
+.menu-item{
+    width: 50%;
+}
+.menu-item img{
+    width: 100%;
+    display: block  ;
+}
+.menu-item-details{
+    width: 50%;
+}
+.menu-item-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.menu-item-details-inner{
+    width: 100%;
+}
+.menu-item-details-inner h2{
+    margin-bottom: 32px;
+    font-size: 300%;
+    color: var(--primary-color);
+    text-align: center;
+}
+.menu-item-details-inner ul{
+    list-style-type: none;
+    padding: 0 35px;
+}
+.menu-item-details-inner ul li{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.menu-item-details-inner ul li::before{
+    content: '\e99a';
+    font-family: 'icomoon' !important;
+    color: var(--primary-color);
+    padding-right: 6px;
+    font-size: 120%;
+}
+.menu-item-details-inner ul li.burger-strips::before{
+    content: '\e9bd';
+    font-family: 'icomoon' !important;
+    color: var(--primary-color);
+    padding-right: 6px;
+    font-size: 120%;
+}
+.menu-item-details-inner ul li.pastas-icon::before{
+    content: '\e9a3';
+    font-family: 'icomoon' !important;
+    color: var(--primary-color);
+    padding-right: 6px;
+    font-size: 140%;
+}
+.menu-item-details-inner ul li.salads-icon::before{
+    content: '\e9a4';
+    font-family: 'icomoon' !important;
+    color: var(--primary-color);
+    padding-right: 6px;
+    font-size: 140%;
+}
+.menu-item-details-inner ul li .line{
+   width: 70%;
+   border-top: 1px dotted ;
+   margin: 0 14px;
+}
+
+
+
+/* Order Now Strip */
+.order-now-strip{
+    background-color: var(--primary-color);
+    padding: 40px;
+    color: var(--white);
+    text-align: center;
+    font-size: 130%;
+}
+.order-now-strip span{
+    padding-right: 25px;
+}
+
+
+
+
+
+/* Map */
+
+
+.map iframe{
+    width: 100%;
+}
